@@ -34,7 +34,7 @@ void initSyl(sylCore *core)
 
 int main(int argc, char *argv[])
 {
-	cout << "Sylphrena lives, gratefully! Time to increase her wit further! Source is now stored in repo"<< endl;
+	cout << "Sylphrena lives, gratefully! Time to increase her wit further! "<< endl;
 	//Set our logging mask and open log
 	setlogmask(LOG_UPTO (LOG_NOTICE));
 	openlog("testd", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
