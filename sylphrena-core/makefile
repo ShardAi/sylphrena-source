@@ -3,7 +3,7 @@ CXX=g++
 RM=rm -f
 CXXFLAGS=-std=c++11 -pthread
 LDFLAGS=
-LDLIBS=
+LDLIBS=-lstdc++ -lgcc
 
 SRCS=syl_socketServer.cpp
 OBJS=$(subst .cpp,.o,$(SRCS))
