@@ -1,5 +1,5 @@
-CC=$(CC)#CC=gcc #THIS IS ACTUAL MAKEFILE
-CXX=$(CXX)#CXX=g++
+CC=gcc
+CXX=g++
 RM=rm -f
 CXXFLAGS=-std=c++11 -pthread
 LDFLAGS=
