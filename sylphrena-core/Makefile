@@ -11,7 +11,7 @@ OBJS=$(subst .cpp,.o,$(SRCS))
 all: syl_core
 
 syl_core: $(OBJS) main.cpp syl_lib.h syl_lib.cpp syl_core.h syl_core.cpp
-	$(CXX) $(CXXFLAGS) main.cpp syl_lib.cpp syl_lib.h syl_core.h syl_core.cpp -o syl_core $(OBJS) $(LDLIBS)
+	$(CXX) -std=c++11 -pthread main.cpp syl_lib.cpp syl_lib.h syl_core.h syl_core.cpp -o syl_core $(OBJS) $(LDLIBS)
 
 syl_socketServer.o: syl_socketServer.h syl_socketServer.cpp syl_core.h
 
