@@ -18,6 +18,7 @@
 #include <unistd.h>
 #include <netdb.h>
 #include <syslog.h>
+#include "syl_nlp.h"
 
 using namespace std;
 
@@ -34,18 +35,14 @@ public:
 private:
     bool connected;
     int client;
-    //int server;
     int portNum;
     struct sockaddr_in server_addr;
-    //socklen_t size;
     int bufSize;
     char* ip;
 
     void readyReadAndWrite();
 
-    //void listenForClients();
-    //void listenToClient();
-    //void messageReceived(const char* msg);
+    sylNlp *nlp;
 };
 
 #endif //SYLSOCKETCLIENT_H

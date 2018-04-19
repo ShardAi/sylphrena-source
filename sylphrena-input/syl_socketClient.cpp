@@ -11,7 +11,8 @@ sylSocketClient::sylSocketClient()
 {
     portNum = 1500; //Must be the same for both client and server. Can be used to setup different applications communicating with the server and differentiating them!
     bufSize = 1024;
-    ip = "127.0.0.1";
+    ip = (char*)"127.0.0.1";
+    nlp = new sylNlp();
 }
 sylSocketClient::~sylSocketClient()
 {
@@ -50,7 +51,7 @@ void sylSocketClient::readyReadAndWrite()
     cout << "--- Awaiting confirmation from server...." << endl;
     recv(client, buffer, bufSize, 0);
     cout << "--- Connection confirmed by message: " << buffer << endl;
-    cout << "--- You can now type the message you want to send. Send message by adding \* at the end." << endl;
+    cout << "--- You can now type the message you want to send. Send message by adding * at the end." << endl;
     cout << "--- Enter # to end the connection and exit this program." << endl;
 
     do
@@ -59,14 +60,17 @@ void sylSocketClient::readyReadAndWrite()
         do
         {
             cin >> buffer;
-            send(client, buffer, bufSize, 0);
+            //send(client, buffer, bufSize, 0);
             if(*buffer == '#')
             {
-                send(client, buffer, bufSize, 0);
+                //send(client, buffer, bufSize, 0);
                 *buffer = '*';
                 isExit = true;
             }
         } while(*buffer != '*');
+        cout << "BUFFER::::::::" << buffer << endl;
+        nlp->handleNewMessage(buffer);
+        send(client, buffer, bufSize, 0);
 
         cout << "Server: ";
         recv(client, buffer, bufSize, 0);
