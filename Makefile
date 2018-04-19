@@ -1,7 +1,6 @@
-CC=gcc#CC=$(CC)
-CXX=g++#CXX=$(CXX)
+CC=gcc
+CXX=g++
 RM=rm -f
-CXXFLAGS=-std=c++11 -pthread
 LDFLAGS=
 LDLIBS=-lstdc++ -lgcc
 

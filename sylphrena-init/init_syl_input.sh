@@ -9,5 +9,5 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-echo "THIS SCRIPT CAN BE USED TO CALL FILES AT BOOT!! :D"
+echo "THIS SCRIPT CAN BE USED TO CALL FILES AT BOOT!! :D INPUT"
 syl_input
