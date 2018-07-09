@@ -1,0 +1,7 @@
+[package]
+name = "sylphrena-input"
+version = "0.1.0"
+authors = ["Eirik Dale <ideauss@hotmail.com>"]
+
+[dependencies]
+daemonize = "0.3.0"

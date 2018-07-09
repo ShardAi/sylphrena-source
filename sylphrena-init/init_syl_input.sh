@@ -10,4 +10,4 @@
 ### END INIT INFO
 
 echo "THIS SCRIPT CAN BE USED TO CALL FILES AT BOOT!! :D INPUT"
-syl_input
+sylphrena-input

@@ -1,0 +1,23 @@
+[[package]]
+name = "daemonize"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "libc"
+version = "0.2.42"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "sylphrena-input"
+version = "0.1.0"
+dependencies = [
+ "daemonize 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum daemonize 0.3.0 (registry+https://github.com/rust-lang/crates.io-index)" = "4093d27eb267d617f03c2ee25d4c3ca525b89a76154001954a11984508ffbde5"
+"checksum libc 0.2.42 (registry+https://github.com/rust-lang/crates.io-index)" = "b685088df2b950fccadf07a7187c8ef846a959c142338a48f9dc0b94517eb5f1"
