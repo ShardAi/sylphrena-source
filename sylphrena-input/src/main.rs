@@ -9,7 +9,8 @@ extern crate daemonize;
 
 mod input;
 
-use std::{thread, time, env, fs::File};
+use std::{thread, time, env};
+use std::fs::File;
 use daemonize::Daemonize;
 use input::syl_input::Sylinput;
 

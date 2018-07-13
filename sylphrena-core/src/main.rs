@@ -9,7 +9,8 @@ extern crate daemonize;
 
 mod core;
 
-use std::{thread, time, env, fs::File};
+use std::{thread, time, env};
+use std::fs::File;
 use daemonize::Daemonize;
 use core::syl_core::Sylcore;
 
