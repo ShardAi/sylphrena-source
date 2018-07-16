@@ -9,5 +9,7 @@
 # Description:       Enable service provided by daemon.
 ### END INIT INFO
 
-echo "THIS SCRIPT CAN BE USED TO CALL FILES AT BOOT!! :D INPUT"
-sylphrena-input
+echo "INITSCRIPT FOR SYLPHRENA CORE STARTED"
+sylphrena-core -d
+
+echo "INITSCRIPT FOR SYLPHRENA CORE FINISHED"

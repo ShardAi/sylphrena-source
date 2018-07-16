@@ -1,0 +1,9 @@
+[Unit]
+Description=start init_sylphrena_core upon first boot
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'sleep 5 ; /usr/sbin/init_sylphrena_core.sh'
+
+[Install]
+WantedBy=multi-user.target

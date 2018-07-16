@@ -1,0 +1,9 @@
+[Unit]
+Description=start init_sylphrena_input upon first boot
+
+[Service]
+Type=simple
+ExecStart=/bin/sh -c 'sleep 5 ; /usr/sbin/init_sylphrena_input.sh'
+
+[Install]
+WantedBy=multi-user.target
