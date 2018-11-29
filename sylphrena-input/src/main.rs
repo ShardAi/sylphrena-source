@@ -48,6 +48,7 @@ fn main() {
 
 	let mut syl_input = Sylinput::new("syl-input");
 
+	syl_input.train_nlp();
 	syl_input.start_client();
 
 	println!("Entering sleep mode. Restart application to initiate new contact with server.");
