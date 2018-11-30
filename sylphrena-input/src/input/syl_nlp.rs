@@ -59,12 +59,7 @@ impl Sylnlp {
         let number_of_words = training_set.len();
 
         let mut prev_word = "";
-        let mut debugc = 0.0;
         for word in training_set.iter() {
-            debugc = debugc + 1.0;
-            if debugc % 1000.0 == 0.0 {
-                println!("TRAINING ITERATION NUMBER: {0}/{1}", debugc, number_of_words);
-            }
             let mut unigrams_exist = false;
             for i in 0..self.unigrams.len() {
                 if self.unigrams[i].matches(word) {
