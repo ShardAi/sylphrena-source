@@ -26,7 +26,7 @@ impl Sylinput {
     }
 
     pub fn train_nlp(&mut self) {
-        self.nlp.train_nlp("../resources/training_text_long");
+        self.nlp.train_nlp("/lib/syl/res/training_text_long");
     }
 
     pub fn start_client(&mut self) {
